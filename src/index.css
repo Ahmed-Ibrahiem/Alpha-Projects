@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+:root {
+  --card-shadow: 0px 4px 25px rgba(34, 86, 102, 0.07);
+}
+
+@theme {
+  --color-primary: #f4197d;
+  --color-secondary: #1ea69a;
+  --color-black: #3b2a56;
+  --color-paragraph: #869199;
+  --color-gradient: linear-gradient(90deg, #fd1e43 0%, #f4197d 100%);
+  --color-softPrimary: #ffadcf;
+  --color-softSecondary: hsla(175, 69%, 38%, 0.31);
+  --color-section-background: #f9f2ee;
+
+  --breakpoint-sm: 36rem; /* 576px */
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 62rem; /* 992px */
+  --breakpoint-xl: 75rem; /* 1200px */
+  --breakpoint-2xl: 87.5rem; /* 1400px (maps to Tailwind's 2xl) */
+}
+
+@layer utilities {
+  .animate-FadeInDown {
+    animation: FadeInDown 0.5s ease-in-out;
+  }
+  .animate-one {
+    animation: animat_one 6s linear infinite ;
+  }
+  .loading {
+    animation: loading 4s linear infinite forwards;
+  }
+  .container {
+    @apply mx-auto px-[20px];
+  }
+  .elements-center-col {
+    @apply flex flex-col items-center justify-center;
+  }
+  .elements-center-row {
+    @apply flex flex-row items-center justify-center;
+  }
+  .element-justify-between {
+    @apply flex flex-row items-center justify-between;
+  }
+  .main-animate-card {
+    @apply before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-primary
+     hover:before:w-full before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-500;
+  }
+  .footer-head-amimate {
+    @apply before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-[30px] before:h-[3px] before:bg-primary
+    hover:before:opacity-100 before:transition-all before:duration-500;
+  }
+
+  .underline_theme::before {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: url(/src/assets/underline_theme.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+    display: none;
+  }
+  @media (min-width: 1024px) {
+    .underline_theme::before {
+      display: block;
+    }
+  }
+}
+::-webkit-scrollbar {
+  appearance: none;
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ccc;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(130deg, #ef3554 0%, #ff479a 100%);
+  border-radius: 10px;
+}
+
+@keyframes FadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes animat_one {
+  0% {
+    transform: translateX(-25px);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateX(-25px);
+  }
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes underline_theme {
+  0% {
+    transform: translateX(-25px);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateX(-25px);
+  }
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  user-select: none;
+  -webkit-user-drag: none;
+  transition: 0.3s;
+}
+
+body {
+  height: 5000px;
+}
