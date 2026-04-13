@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { courses } from "../../assets/assets";
-import Courses_card_style_two from "../Course Card Style Two/Courses_card_style_two";
-import Section_header from "../Section Header/Section_header";
+import Courses_card_style_two from "../course-card-style-two/Courses_card_style_two";
+import Section_header from "../section-header/Section_header";
 
 const Popular_courses_two = () => {
   return (

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import pepular_courses_shap from "../../assets/pepular_courses_shap.png";
-import Course_card from "../Course Card/Course_card";
+import Course_card from "../course-card/Course_card";
 import { courses } from "../../assets/assets";
-import Section_header from "../Section Header/Section_header";
+import Section_header from "../section-header/Section_header";
 
 const Popular_Courses = () => {
   return (

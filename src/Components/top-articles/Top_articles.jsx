@@ -1,6 +1,6 @@
-import Section_header from "../Section Header/Section_header";
-import Master_button from "../Master button/Master_button";
-import Article_box from "../Articles box/Article_box";
+import Section_header from "../section-header/Section_header";
+import Master_button from "../master-button/Master_button";
+import Article_box from "../articles-box/Article_box";
 import { articles_info } from "../../assets/assets";
 
 const Top_articles = () => {

@@ -1,7 +1,6 @@
 import { SwiperSlide } from "swiper/react";
 import { partner_info } from "../../assets/assets";
-import Custom_swiper from "../Custom Swiper/Custom_swiper";
-import partner_one from "../../assets/partner-1.svg";
+import Custom_swiper from "../custom-swiper/Custom_swiper";
 import { Link } from "react-router-dom";
 const Partner = () => {
   return (

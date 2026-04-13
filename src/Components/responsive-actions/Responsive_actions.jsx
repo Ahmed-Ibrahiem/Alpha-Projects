@@ -1,5 +1,5 @@
-import Master_button from "../Master button/Master_button";
-import Header_search_box from "../Header Search box/Header_search_box";
+import Master_button from "../master-button/Master_button";
+import Header_search_box from "../header-search-box/Header_search_box";
 
 const Responsive_actions = ({ responsive_actions }) => {
   return (

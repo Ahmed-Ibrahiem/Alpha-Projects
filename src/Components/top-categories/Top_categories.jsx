@@ -1,5 +1,5 @@
 import { categories_info } from "../../assets/assets";
-import Section_header from "../Section Header/Section_header";
+import Section_header from "../section-header/Section_header";
 
 const Top_categories = () => {
   return (

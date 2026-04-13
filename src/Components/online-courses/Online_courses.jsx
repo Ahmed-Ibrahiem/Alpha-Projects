@@ -1,5 +1,5 @@
 import React from "react";
-import Opportunities_card from "../Opportunities card/Opportunities_card";
+import Opportunities_card from "../opportunities-card/Opportunities_card";
 import { opportunities_cards_info } from "../../assets/assets";
 
 const Online_courses = () => {

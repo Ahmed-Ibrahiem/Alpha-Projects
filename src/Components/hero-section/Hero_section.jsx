@@ -1,4 +1,4 @@
-import Master_button from "../Master button/Master_button";
+import Master_button from "../master-button/Master_button";
 
 const Hero_section = () => {
   return (

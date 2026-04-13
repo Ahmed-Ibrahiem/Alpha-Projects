@@ -1,4 +1,4 @@
-import Header_navbar from "../Header navbar/Header_navbar";
+import Header_navbar from "../header-navbar/Header_navbar";
 
 const Responsive_navbar = ({responsive_navbar}) => {
   return (

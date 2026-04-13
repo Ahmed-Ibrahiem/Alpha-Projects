@@ -1,10 +1,10 @@
-import Master_button from "../Master button/Master_button";
-import Header_navbar from "../Header navbar/Header_navbar";
-import Header_search_box from "../Header Search box/Header_search_box";
+import Master_button from "../master-button/Master_button";
+import Header_navbar from "../header-navbar/Header_navbar";
+import Header_search_box from "../header-search-box/Header_search_box";
 import { useEffect, useState } from "react";
-import Responsive_navbar from "../Responsive navbar/responsive_navbar";
-import Responsive_actions from "../Responsive actions/Responsive_actions";
-import Responsive_buttons from "../Responsive buttons/Responsive_buttons";
+import Responsive_actions from "../responsive-actions/Responsive_actions";
+import Responsive_buttons from "../responsive-buttons/Responsive_buttons";
+import Responsive_navbar from "../responsive-navbar/Responsive_navbar";
 
 const Header = () => {
   const [responsive_navbar, set_responsive_navbar] = useState(false);

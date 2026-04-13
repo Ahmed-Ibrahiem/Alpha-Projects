@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import instructor_image from "../../assets/Instructor_image.png";
-import Master_button from "../Master button/Master_button";
-import loading from '../../assets/loading.png'
-
+import Master_button from "../master-button/Master_button";
+import loading from "../../assets/loading.png";
 
 const Instructor_area = () => {
   return (

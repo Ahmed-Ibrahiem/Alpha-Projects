@@ -1,6 +1,6 @@
-import Section_header from "../Section Header/Section_header";
+import Section_header from "../section-header/Section_header";
 import success_image from "../../assets/success_image.png";
-import Success_boxs from "../Success boxs/Success_boxs";
+import Success_boxs from "../success-boxs/Success_boxs";
 
 const Start_success = () => {
   return (

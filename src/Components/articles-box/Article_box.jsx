@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import my_img from "../../assets/articlate_1.jpg";
 
 const Article_box = ({ article_data }) => {
   return (
